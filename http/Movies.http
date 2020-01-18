@@ -1,0 +1,20 @@
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title":  "this is name",
+  "description": "this is description",
+  "imdbId": "1234567890"
+}
+
+###
+
+GET http://localhost:8080/movies/all
+Accept: application/json
+
+###
+
+GET http://localhost:8080/movies?ncas=99
+Accept: application/json
+
+###

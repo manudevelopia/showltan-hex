@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SHOWLTAN_DB
+    username: admin
+    password: password

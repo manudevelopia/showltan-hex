@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+
+  showltan-api:
+    build: ./showltan-api
+    image: manudevelopia/showltan-api:latest
+    container_name: showltan-api
+
+  showltan-db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=SHOWLTAN_DB
+    ports:
+      - 5432:5432
+    volumes:
+      - ./sql/showltan-api/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./sql/showltan-api/data.sql:/docker-entrypoint-initdb.d/2-data.sql
+

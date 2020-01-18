@@ -1,0 +1,5 @@
+rootProject.name = 'showltan-app'
+
+include 'showltan-api'
+include 'showltan-core'
+include 'showltan-infra'
