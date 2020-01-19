@@ -6,8 +6,13 @@ services:
     build: ./showltan-api
     image: manudevelopia/showltan-api:latest
     container_name: showltan-api
+    ports:
+      - 8080:8080
+    depends_on:
+      - showltan-db
 
   showltan-db:
+    container_name: showltan-db
     image: postgres
     environment:
       - POSTGRES_USER=admin
