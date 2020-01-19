@@ -1,4 +1,4 @@
-package info.developia.showltan
+package info.developia.showltan.repository
 
 import info.developia.showltan.mapper.MovieMapper
 import info.developia.showltan.model.Movie

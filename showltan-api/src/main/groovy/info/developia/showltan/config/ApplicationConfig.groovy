@@ -1,6 +1,6 @@
 package info.developia.showltan.config
 
-import info.developia.showltan.MovieRepositoryImpl
+import info.developia.showltan.repository.MovieRepositoryImpl
 import info.developia.showltan.mapper.MovieMapper
 import info.developia.showltan.repository.MovieRepository
 import info.developia.showltan.service.MovieService
