@@ -8,4 +8,4 @@ WORKDIR ${APP_ROOT}
 
 COPY build/libs/*.jar ${APP_ROOT}/run.jar
 
-ENTRYPOINT ["java","-Dspring.profiles.active=dev","-Djava.security.egd=file:/dev/./urandom", "-jar", "run.jar"]
+ENTRYPOINT ["java","-Dspring.profiles.active=docker","-Djava.security.egd=file:/dev/./urandom", "-jar", "run.jar"]
