@@ -5,8 +5,8 @@ import info.developia.showltan.model.Movie
 
 interface MovieRepository {
 
-    Optional<Movie> getByNcas(String ncas)
+    Optional<Movie> getByImdbId(String imdbId)
     List<Movie> getAll()
-    int save(Movie compose)
+    int save(Movie movie)
 
 }

@@ -18,12 +18,12 @@ class ApplicationConfig {
     private final MovieMapper movieMapper
 
     @Bean
-    public MovieService getComposeService() {
-        return new MovieServiceImpl(composeRepository)
+    public MovieService getMovieService() {
+        return new MovieServiceImpl(movieRepository)
     }
 
     @Bean
-    public MovieRepository getComposeRepository() {
+    public MovieRepository getMovieRepository() {
         return new MovieRepositoryImpl(movieMapper)
     }
 

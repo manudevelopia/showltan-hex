@@ -6,25 +6,26 @@ import info.developia.showltan.repository.MovieRepository
 
 class MovieRepositoryImpl implements MovieRepository {
 
-    MovieMapper composeMapper
+    MovieMapper movieMapper
 
-    MovieRepositoryImpl(MovieMapper composeMapper) {
-        this.composeMapper = composeMapper
+    MovieRepositoryImpl(MovieMapper movieMapper) {
+        this.movieMapper = movieMapper
     }
 
     @Override
-    Optional<Movie> getByNcas(String ncas) {
-        composeMapper.getByNcas(ncas)
+    Optional<Movie> getByImdbId(String imdbId) {
+        movieMapper.getByImdbId(imdbId)
     }
 
     @Override
     List<Movie> getAll() {
-        composeMapper.getAll()
+
+        movieMapper.getAll()
     }
 
     @Override
-    int save(Movie compose) {
-        composeMapper.save(compose)
+    int save(Movie movie) {
+        movieMapper.save(movie)
     }
 
 }

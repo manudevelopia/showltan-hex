@@ -21,8 +21,8 @@ class MovieController {
     }
 
     @GetMapping
-    ResponseEntity<Movie> getByNcas(@RequestParam String ncas) {
-        ResponseEntity.ok(movieService.getByNcas(ncas))
+    ResponseEntity<Movie> getByImdbId(@RequestParam String imdbId) {
+        ResponseEntity.ok(movieService.getByImdbId(imdbId))
     }
 
     @PostMapping

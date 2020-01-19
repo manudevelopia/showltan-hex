@@ -13,8 +13,8 @@ class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    Movie getByNcas(String ncas) {
-        return movieRepository.getByNcas(ncas)
+    Movie getByImdbId(String imdbId) {
+        return movieRepository.getByImdbId(imdbId)
                 .orElseThrow({ new NotFoundException() })
     }
 

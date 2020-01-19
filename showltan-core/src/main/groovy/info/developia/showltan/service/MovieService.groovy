@@ -5,8 +5,8 @@ import info.developia.showltan.model.Movie
 
 interface MovieService {
 
-    Movie getByNcas(String ncas)
+    Movie getByImdbId(String imdbId)
     List<Movie> getAll()
-    int save(Movie compose)
+    int save(Movie movie)
 
 }
